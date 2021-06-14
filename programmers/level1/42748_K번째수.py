@@ -1,4 +1,4 @@
-# 레벨1: K번째수
+# 레벨1-정렬: K번째수
 # https://programmers.co.kr/learn/courses/30/lessons/42748
 
 # command 들어오면 정렬

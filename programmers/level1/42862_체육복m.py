@@ -1,4 +1,4 @@
-# 레벨1: 체육복
+# 레벨1-탐욕법: 체육복
 # https://programmers.co.kr/learn/courses/30/lessons/42862
 
 # 정확성: 66.7 / 100
