@@ -12,7 +12,7 @@ def solution(bridge_length, weight, truck_weights):
                 passing.append(truck_weights.pop(0))
             else:
                 passing.append(0)
-    return str(answer)
+    return answer
 
 
 print(solution(2, 10, [7, 4, 5, 6]))
