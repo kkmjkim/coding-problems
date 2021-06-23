@@ -1,6 +1,7 @@
 # 레벨2-해시: 위장
 # https://programmers.co.kr/learn/courses/30/lessons/42578
 
+# 정확성: 100 / 100
 def solution2(clothes):
     answer = 1
     style = {}
