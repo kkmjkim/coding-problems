@@ -25,4 +25,7 @@ def solution(n):
     for i in range(n):
         answer += temp[i]
 
-    return str(answer)
+    return answer
+
+
+print(solution(5))  # [1,2,12,3,13,11,4,14,15,10,5,6,7,8,9]

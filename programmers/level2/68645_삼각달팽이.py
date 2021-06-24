@@ -21,7 +21,7 @@ def solution1(n):
             x += dx[d]
     return sum(b, [])
 
-print(solution1(5))
+print(solution1(5))  # [1,2,12,3,13,11,4,14,15,10,5,6,7,8,9]
 
 # "To concatenate a series of iterables, consider using itertools.chain()."
 
@@ -42,4 +42,4 @@ def solution2(n):
             cnt += 1
     return list(chain(*board))
 
-print(solution2(5))
+print(solution2(5))  # [1,2,12,3,13,11,4,14,15,10,5,6,7,8,9]
