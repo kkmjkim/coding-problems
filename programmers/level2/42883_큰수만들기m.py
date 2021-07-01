@@ -22,31 +22,26 @@ def solution(number, k):
     return answer
 
 
-print(solution('4177252841', 4))  # "3234"
+print(solution('4177252841', 4))  # "775841"
+
+##################################################################################################
 
 
-# # 정확성: 83.3 / 100.0
-# def solution(number, k):
-#     answer = ''
-#     left = len(number) - k
-#     start = 0
-#     end = k
-#     number = [int(i) for i in number]
-#
-#     while left:
-#         candidates = number[start:end+1]
-#
-#         # 나머지 모두 처리
-#         if end == len(number) and len(candidates) == left:
-#             answer += "".join(str(i) for i in candidates)
-#             break
-#
-#         # argmax
-#         j = start + max(range(len(candidates)), key=lambda i: candidates[i])
-#
-#         answer += str(number[j])
-#         left -= 1
-#         start = j + 1
-#         end += 1
-#
-#     return answer
+# 정확성: 83.3 / 100.0
+def solution2(number, k):
+    answer = ''
+    number = list(map(int, number))
+    right = len(number) - k - 1
+    while number:
+        if right == 0:  # 이제 한개만 찾으면 될 때
+            idx = number.index(max(number))
+            answer += str(number[idx])
+            return answer
+        else:
+            idx = number.index(max(number[:-right]))
+            answer += str(number[idx])
+            del number[:idx+1]
+        right -= 1
+
+
+print(solution('4177252841', 4))  # "775841"
